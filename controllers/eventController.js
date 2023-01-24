@@ -4,7 +4,7 @@ const Event = require('../model/events')
 const get_events = async(req, res) => {
 
     try {
-        const event = await Event.find().sort(-1)
+        const event = await Event.find()
         res.send(event)
 
     } catch (error) {
