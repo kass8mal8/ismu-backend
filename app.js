@@ -11,8 +11,8 @@ app.use(express.json())
 const connect = () => {
     try {
         mongoose.connect(MONGO_URI, {
-            useNewUrlParser:'true',
-            useUnifiedTopology:'true'
+            useNewUrlParser: 'true',
+            useUnifiedTopology: 'true'
         })
         console.log('Database Connection successful');
     } catch (error) {
